@@ -1,0 +1,68 @@
+  .owl-carousel .owl-item img {
+   width: none;
+  }
+  
+
+  @keyframes marquee {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  .animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 150s linear infinite;
+  }
+
+  .bg {
+    background: linear-gradient(0deg, rgb(224, 242, 247) 0%, rgb(246, 253, 255) 100%);
+  }
+
+
+  .text-linear {
+    background: -webkit-linear-gradient(#CDDB2C, #FF5C00);
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.blink-text {
+  /* display: inline; */
+  animation: textanim 7s ease 1s infinite alternate;
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes textanim {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.blink-text2 {
+  /* display: inline; */
+  animation: textanim2 7s ease 1s infinite alternate;
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes textanim2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
